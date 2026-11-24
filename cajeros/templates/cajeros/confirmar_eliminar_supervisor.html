@@ -1,0 +1,20 @@
+{% extends 'cajeros/base.html' %}
+{% block title %}Eliminar registro | SGCC{% endblock %}
+{% block content %}
+<div class="form-card text-center">
+    <div class="login-mark text-danger bg-danger-subtle">!</div>
+    <h1 class="h3 fw-bold">¿Eliminar este registro?</h1>
+    <p class="text-secondary">
+        Se eliminará a <strong>{{ supervisor.nombre }} {{ supervisor.apellido }}</strong>,
+        ID {{ supervisor.id_jefatura }}, cargo {{ supervisor.get_cargo_display }}.
+        Esta acción no se puede deshacer y quedará registrada en la bitácora.
+    </p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="d-flex justify-content-center gap-2 mt-4">
+            <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+            <a class="btn btn-light" href="{% url 'listado_supervisores' %}">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
