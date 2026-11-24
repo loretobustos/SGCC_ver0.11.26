@@ -31,8 +31,7 @@ Sistema web desarrollado en **Django** para la administración en tiempo real, c
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/TU_USUARIO/sgcc-sistema-gestion-cajas.git](https://github.com/TU_USUARIO/sgcc-sistema-gestion-cajas.git)
-   cd sgcc-sistema-gestion-cajas
+   (https://github.com/loretobustos/SGCC_ver0.11.26.git)
 
 
 # SGCC ACTUALIZACIÓN 0.11.26
